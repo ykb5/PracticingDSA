@@ -12,7 +12,7 @@ class SparseMatrix
 {
 private:
     int row, col;
-    node** arr;
+    node **arr;
 
 public:
     SparseMatrix(int row, int col)
@@ -54,7 +54,7 @@ public:
             node *p = arr[i];
             for (int j = 0; j < col; j++)
             {
-                if (p!=nullptr && p->col == j)
+                if (p != nullptr && p->col == j)
                 {
                     cout << p->val << " ";
                     p = p->next;
